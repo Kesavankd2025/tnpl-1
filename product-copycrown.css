@@ -1,0 +1,199 @@
+/* Color Variables from Aruna Logo */
+:root {
+    --aruna-purple: #4B3B87;
+    --aruna-purple-dark: #3A2D6B;
+    --aruna-orange: #F7941D;
+    --aruna-orange-dark: #D67D15;
+    --aruna-light-bg: #ffffff;
+}
+
+/* Header Background - Reduced Size */
+.menu-area,
+#sticky-header,
+.transparent-header {
+    background-color: transparent !important;
+    box-shadow: none;
+    padding: 10px 0 !important;
+}
+
+#sticky-header.sticky-menu {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(75, 59, 135, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    animation: sticky 0.5s;
+}
+
+header {
+    background-color: transparent !important;
+}
+
+/* Logo Styles - Increased Size */
+.header-logo {
+    height: 70px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+.mobile-logo {
+    height: 55px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Apply Logo Colors */
+.tg-btn {
+    background: linear-gradient(135deg, var(--aruna-purple) 0%, var(--aruna-purple-dark) 100%) !important;
+    border-color: var(--aruna-purple) !important;
+}
+
+.tg-btn:hover {
+    background: linear-gradient(135deg, var(--aruna-orange) 0%, var(--aruna-orange-dark) 100%) !important;
+    border-color: var(--aruna-orange) !important;
+    box-shadow: 0 5px 15px rgba(247, 148, 29, 0.3);
+}
+
+.navigation li.active a,
+.navigation li:hover a {
+    color: var(--aruna-purple) !important;
+}
+
+.sub-title {
+    color: var(--aruna-orange) !important;
+}
+
+/* Global Typography & Colors */
+body {
+    font-family: 'Trajan Pro Bold', 'Cinzel', serif;
+    color: #1e293b;
+    background-color: #ffffff;
+}
+
+.main-area {
+    margin-top: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Trajan Pro Bold', 'Cinzel', serif;
+    color: #1e293b;
+    text-transform: uppercase;
+}
+
+/* Category Header (TNPL Style) */
+.category-header-wrap {
+    background-color: #f1f5f9;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    color: #94a3b8;
+}
+
+/* Product Main Layout */
+.product-main-details {
+    background-color: #ffffff;
+}
+
+.product-image-sticky img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.product-content-stack {
+    padding-left: 20px;
+}
+
+/* Content Details */
+.product-title-large {
+    font-size: 48px;
+    letter-spacing: -1px;
+}
+
+.product-tagline-hero {
+    text-transform: none !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.section-divider-title h3,
+.features-stack h3,
+.apps-grid-wrap h3 {
+    margin-bottom: 20px;
+}
+
+/* Features Bullets */
+.features-bullets li {
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Apps Grid */
+.app-icon-mini {
+    padding: 15px 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.app-icon-mini:hover {
+    background: #f8fafc;
+    transform: translateY(-3px);
+}
+
+/* Buttons */
+.tg-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(75, 59, 135, 0.2);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--aruna-purple) 0%, var(--aruna-purple-dark) 100%) !important;
+    border-color: var(--aruna-purple) !important;
+}
+
+.tg-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(75, 59, 135, 0.3);
+    background: linear-gradient(135deg, var(--aruna-orange) 0%, var(--aruna-orange-dark) 100%) !important;
+    border-color: var(--aruna-orange) !important;
+}
+
+.btn-outline-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background: #1e293b;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .product-title-large {
+        font-size: 36px;
+    }
+
+    .product-image-sticky {
+        position: static !important;
+        margin-bottom: 40px;
+    }
+
+    .product-content-stack {
+        padding-left: 0;
+    }
+}
